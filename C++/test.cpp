@@ -12,6 +12,10 @@ int main()
 	//int z = pow(3,2);
 	//int z = sqrt(9);
 	//int z = abs(-2);
+	//int z = round(x);
+	//int z = ceil(x);
+	//int z = floor(x);
+	
 	cout << z;
 	
  	return 0;

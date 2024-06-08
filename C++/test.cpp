@@ -3,16 +3,16 @@ using namespace std;
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
+	//break : break out of the loop
+	//continue: skip the current iteration
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
-	
-	
- 	return 0;
+	for(int i = 1; i <= 20; i++){
+		if(i == 13)
+		{
+			break;
+			//continue;
+		}
+		cout << i << endl;
+	}
+	return 0;
 }

@@ -1,18 +1,12 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
-	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
-	
-	
- 	return 0;
+	for(int i = 10; i >= 1; i-=1){
+		cout << i << endl;
+	}
+	cout << "HAPPY NEW YEAR! " << endl;
+	return 0;
 }

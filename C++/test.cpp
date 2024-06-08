@@ -1,18 +1,16 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main()
 {
 	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
+	while(name.empty()) {
+		cout << "Enter Your Name: ";
+		getline(cin , name);
+	}
+	cout << "Hello " << name << "\n";
 	
-	
- 	return 0;
+	return 0;
 }

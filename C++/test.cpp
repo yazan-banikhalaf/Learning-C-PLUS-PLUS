@@ -1,18 +1,36 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
+	double num1, num2;
+	char op;
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
+	cout << "Enter the operator (+ - * /): ";
+	cin >> op;
 	
+	cout << "Enter #1: ";
+	cin >> num1;
 	
+	cout << "Enter #2: ";
+	cin >> num2;
+	
+	switch(op){
+		case '+':
+		cout << "The result is: " << num1 + num2<< endl;
+		break;
+		case '-':
+		cout << "The result is: " << num1 - num2<< endl;
+		break;
+		case '*':
+		cout << "The result is: " << num1 * num2<< endl;
+		break;
+		case '/':
+		cout << "The result is: " << num1 / num2 << endl;
+		break;
+		default:
+		cout << "Enter a valid operator" << endl;;
+	}
  	return 0;
 }

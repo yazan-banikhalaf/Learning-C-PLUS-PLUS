@@ -1,18 +1,22 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
+	double x = 3.14;
+	double y = 4;
+
+	//int z = max(x,y);
+	//int z = min(x,y);
+	//int z = pow(3,2);
+	//int z = sqrt(9);
+	//int z = abs(-2);
+	//int z = round(x);
+	//int z = ceil(x);
+	//int z = floor(x);
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
-	
+	cout << z;
 	
  	return 0;
 }

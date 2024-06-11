@@ -1,18 +1,25 @@
 #include<iostream>
+#include <ctime>
+
 using namespace std;
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
+	int temp;
+	bool sunny = true;;
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
+	cout << "Enter the temp: ";
+	cin >> temp;
+	if(temp <= 0 || temp >= 30){
+		cout << "The temp is  bad " << endl;
+	} else {
+		cout << "The temp is good" << endl;
+	}
 	
-	
- 	return 0;
+	if(!sunny){
+		cout << "Its sunny outside" << endl;
+	} else {
+		cout << "Its cloudy outside" << endl;
+	}
+	return 0;
 }

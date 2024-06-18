@@ -1,18 +1,24 @@
 #include<iostream>
+
 using namespace std;
+
+
+void happyBirthday(string name, int age){
+	cout << "Happy birthday to you! " << name << endl;
+	cout << "Happy birthday to you! " << name << endl;
+	cout << "Happy birthday dear you! " << name << endl;
+	cout << "Happy birthday to you! " << name << endl;
+	cout << "You age is: " << age << "!" << endl;
+
+}
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
+	// function : a block of reusable code
+	string name = "Yazan";
+	int age = 23;
+	happyBirthday(name,age);
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
-	
-	
- 	return 0;
+	return 0;
 }
+

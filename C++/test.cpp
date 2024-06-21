@@ -1,18 +1,23 @@
 #include<iostream>
+
 using namespace std;
+
+
+string FullName(string string1, string string2);
 
 int main()
 {
-	string name;
-	int age;
-	cout << "Enter Your Age: ";
-	cin >> age;
-	cout << "Your Age Is: " << age;
+	// function : a block of reusable code
+	string first_name = "Yazan";
+	string last_name = "Banikhalaf";
+	string full_name = FullName(first_name, last_name);
 	
-	cout << "Enter Your Name: ";
-	getline(cin >> ws, name);
-	cout << "Hello " << name << endl;
-	
-	
- 	return 0;
+	cout << "Hello " << full_name << "\n";
+	return 0;
 }
+
+string FullName(string string1, string string2){
+	return string1 + " " + string2;
+}
+
+
